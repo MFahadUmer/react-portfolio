@@ -1,5 +1,11 @@
 import styled from '@emotion/styled';
-import { Twitter } from '@mui/icons-material';
+import {
+  Email,
+  GitHub,
+  LinkedIn,
+  Twitter,
+  WhatsApp,
+} from '@mui/icons-material';
 import { Typography, Box } from '@mui/material';
 import { fontWeight } from '@mui/system';
 import React from 'react';
@@ -40,8 +46,25 @@ const Introduction = () => {
         >
           LET'S CONTACT
         </Typography>
-        <Box mt={2}>
-          <Twitter sx={{ color: 'rgb(97, 95, 95)' }} />
+        <Box mt={2} display="flex" gap="20px">
+          <a href="https://twitter.com/engfahadumer" target="blank">
+            <Twitter sx={{ color: 'rgb(97, 95, 95)' }} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-fahad-umer/"
+            target="blank"
+          >
+            <LinkedIn sx={{ color: 'rgb(97, 95, 95)' }} />
+          </a>
+          <a href="https://github.com/MFahadUmer" target="blank">
+            <GitHub sx={{ color: 'rgb(97, 95, 95)' }} />
+          </a>
+          <a href="mailto:eng.fahadumer@gmail.com">
+            <Email sx={{ color: 'rgb(97, 95, 95)' }} />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=923326037639&text=Just%20watched%20your%20resume!%20Need%20to%20contact%20you..">
+            <WhatsApp sx={{ color: 'rgb(97, 95, 95)' }} />
+          </a>
         </Box>
       </MainBox>
     </IntroContainer>
