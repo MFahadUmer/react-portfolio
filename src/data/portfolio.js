@@ -1,3 +1,5 @@
+import { Toys } from '../assets/images';
+
 export const portfolioList = [
   {
     id: 1,
@@ -8,7 +10,7 @@ export const portfolioList = [
     description:
       "This is a project based on a Glance design. For this project, I've to create an online shop for the products of our own choice. So, I've created a website for Toys online shop.",
     technology: ['HTML', 'CSS', 'BOOTSTRAP'],
-    image: '',
+    image: <Toys />,
     livePreview: 'https://mfahadumer.github.io/',
     github: 'https://github.com/MFahadUmer/Capstone-Project',
   },
